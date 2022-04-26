@@ -1,65 +1,152 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="shortcut icon" href="imagenes/Mesa de trabajo 24logo ML.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilos.css">
     <title>Mimi Lagarto Proyecto</title>
 </head>
+
 <body>
     <!------------barra navegacion----------->
     <header>
-        <nav>
-            <div><a href="index.html"><img src="imagenes/Mesa de trabajo 24logo ML.png"></a></div>
-            <ul class="barraLinks">
-                <li><a href="index.html":>INICIO</a></li>
-                <li><a href="pages/bio.html":>BIO</a></li>
-                <li><a href="pages/galeria.html":>GALERIA</a></li>
-                <li><a href="pages/videos.html":>VIDEOS</a></li>
-                <li><a href="pages/contacto.html":>CONTACTO</a></li>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagenes/Mesa de trabajo 24logo ML.png" alt="Logo" style="width: 50px;"
+                        class="rounded-pill">
+                </a>
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" :>INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/bio.html" :>BIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/galeria.html" :>GALERIA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/videos.html" :>VIDEOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html" :>CONTACTO</a>
+                </li>
             </ul>
         </nav>
     </header>
     <!---------------------------------------->
     <main>
-    <!------------primer seccion----------->
-    <div class="seccion-uno">
-        <div class="img"></div>
-        <div class="texto">        
-            <h1>Mimi Lagarto</h1> 
-            <p>Artista | Compositora | Guitarrista</p>
+        <!------------primer seccion----------->
+
+        <div class="seccion-uno">
+            <div class="img"></div>
+            <div class="texto text-black">
+                <h1>Mimi Lagarto</h1>
+                <p>Artista | Compositora | Guitarrista</p>
+            </div>
         </div>
-    </div>
-    <!---------------------------------------->
-    <!------------segunda seccion-----------> 
-    <div class="seccion-dos">
-        <div class="contenido">Mimi Lagarto es tan actual como ancestral. Su sonido fusiona elementos de la música popular latina y rioplatense con  componentes rítimicos y fraseos típicos de géneros urbanos, contemporáneos y electrónicos.
-        En vivo la propuesta es perfomatica, bailable e introspectiva. Entre el misterio y lo conocido, convoca al rito del encuentro. La ofrenda, el sonido.</div>
-        <div class="foto"></div>
-    </div>
-    <!---------------------------------------->
-    <!------------tercer seccion----------->
-    <div class="seccion-tres">
-        <div class="video"><iframe src="https://www.youtube.com/embed/TEPXpN35ywo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        <div class="foto1"></div>
-        <div class="foto2"></div>
-        <div class="foto3"></div>
-        <div class="foto4"></div>
-    </div>
-    <!---------------------------------------->
-    <!------------footer----------->
-    <footer>
-        <p>Todos los derechos reservados Mimi Lagarto</p>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-spotify"></i>
-    </footer>
-    <!---------------------------------------->
+        <!---------------------------------------->
+        <!------------segunda seccion----------->
+        <div class="seccion-dos">
+            <div class="contenido">Mimi Lagarto es tan actual como ancestral. Su sonido fusiona elementos de la música
+                popular latina y rioplatense con componentes rítimicos y fraseos típicos de géneros urbanos,
+                contemporáneos y electrónicos.
+                En vivo la propuesta es perfomatica, bailable e introspectiva. Entre el misterio y lo conocido, convoca
+                al rito del encuentro. La ofrenda, el sonido.</div>
+            <div class="foto"></div>
+        </div>
+        <!---------------------------------------->
+        <!------------tercer seccion----------->
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/Sin título-2.png" alt="mimi agachada" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/48790005.JPG" alt="sacando lengua" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/48790007.JPG" alt="mimi de espalda" class="d-block w-100">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <!---------------------------------------->
+        <!------------footer----------->
+        <footer class="bg-light text-center ">
+            <!-- Grid container -->
+            <div class="container p-4">
+
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!"
+                        role="button"><i class="fab fa-facebook-f"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!"
+                        role="button"><i class="fab fa-twitter"></i></a>
+
+                    <!-- Google -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!"
+                        role="button"><i class="fab fa-google"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!"
+                        role="button"><i class="fab fa-instagram"></i></a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!"
+                        role="button"><i class="fab fa-linkedin-in"></i></a>
+                    <!-- Github -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!"
+                        role="button"><i class="fab fa-github"></i></a>
+                </section>
+                <!-- Section: Social media -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                    © 2022 Copyright:
+                    <a class="text-dark" href="https://aleeyair77.github.io/Mimi-Lagarto-Proyecto/">Mimi Lagarto</a>
+                </div>
+                <!-- Copyright -->
+
+                <!---------------------------------------->
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
