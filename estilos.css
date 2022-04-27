@@ -8,6 +8,7 @@
 /* barra navegacion universal*/
 
 
+
 /* Footer universal */
 
 footer{
@@ -28,6 +29,40 @@ footer p{
 footer i{
     font-size: 30px;
     justify-content: center;
+}
+
+.spinner {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.spinner::before,
+.spinner:after{
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+}
+.spinner:before {
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(
+        0deg, #ff00cc 0%,
+        #333399 100% );
+    animation: spin .5s infinite linear;
+}
+.spinner:after {
+    width: 85%;
+    height: 85%;
+    background-color: #151515;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* index.html */
@@ -58,17 +93,19 @@ footer i{
     width: 60%;
     position: absolute;
     top: 40%;
-    margin-left: 20%
+    margin-left: 20%;
 }
 
 .seccion-uno h1{
     font-size: 6vw;
     text-align: center;
+    color: black !important;
 }
 
 .seccion-uno p{
     font-size: 4vw;
     text-align: center;
+    color: black !important;
 }
 
 .seccion-uno h1, .seccion-uno{
@@ -102,6 +139,10 @@ footer i{
 
 }
 
+.Fondo{
+    background-color: black !important;
+    padding: auto !important;
+}
 
 /* Tercer seccion */
 
