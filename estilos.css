@@ -7,7 +7,9 @@
 
 /* barra navegacion universal*/
 
-
+.navbar-collapse{
+    flex-grow: inherit;
+}
 
 /* Footer universal */
 
