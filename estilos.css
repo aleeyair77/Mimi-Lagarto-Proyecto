@@ -18,7 +18,7 @@ footer{
     display: flex;
     width: 100%;
     height: 80px;
-    background-color: white;
+    background-color: #dc3545;
     color: black;
     padding-top: 20px;
     padding-left: 10px;
@@ -26,11 +26,11 @@ footer{
 }
 
 footer p{
-    font-size: 25px;
+    font-size: 2vw;
 }
 
 footer i{
-    font-size: 30px;
+    font-size: 2vw;
     justify-content: center;
 }
 
@@ -67,7 +67,7 @@ footer i{
 }
 
 .seccion-uno h1{
-    font-size: 6vw;
+    font-size: 9vw;
     text-align: center;
     color: black !important;
 }
@@ -93,6 +93,7 @@ footer i{
     height: 100vh;
     width: 100%;
     background-color: black;
+
 }
 
 .contenido { 
@@ -100,7 +101,7 @@ footer i{
     border-style: ridge;
     color: white;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 2vw;
 
 }
 
