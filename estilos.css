@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,14 +9,14 @@
 /* barra navegacion universal*/
 
 
-.navbar-collapse{
+.navbar-collapse {
     flex-grow: inherit;
 }
 
 
 /* Footer universal */
 
-footer{
+footer {
     display: flex;
     width: 100%;
     height: 80px;
@@ -27,11 +27,11 @@ footer{
     justify-content: space-around;
 }
 
-footer p{
+footer p {
     font-size: 2vw;
 }
 
-footer i{
+footer i {
     font-size: 2vw;
     justify-content: center;
 }
@@ -41,7 +41,8 @@ footer i{
 
 /* Primer seccion */
 
-.seccion-uno {  display: grid;
+.seccion-uno {
+    display: grid;
     grid-template-columns: 0.5fr 2.2fr 0.3fr;
     grid-template-rows: 0.8fr 1.3fr 0.9fr;
     gap: 0px 0px;
@@ -50,44 +51,48 @@ footer i{
     width: 100%;
 }
 
-.img { 
+.img {
     grid-area: 1 / 1 / 4 / 4;
     background-image: url(imagenes/_MG_0831[1894].jpg);
     background-size: cover;
     background-position: center;
 }
 
-.texto { grid-area: 2 / 2 / 3 / 3; }
+.texto {
+    grid-area: 2 / 2 / 3 / 3;
+}
 
 
 
-.seccion-uno .texto{
+.seccion-uno .texto {
     width: 60%;
     position: absolute;
     top: 40%;
     margin-left: 20%;
 }
 
-.seccion-uno h1{
+.seccion-uno h1 {
     font-size: 9vw;
     text-align: center;
     color: black !important;
 }
 
-.seccion-uno p{
+.seccion-uno p {
     font-size: 4vw;
     text-align: center;
     color: black !important;
 }
 
-.seccion-uno h1, .seccion-uno{
+.seccion-uno h1,
+.seccion-uno {
     text-shadow: 0px 0px 7px white;
 }
 
 /* Segund seccion */
 
 
-.seccion-dos {  display: grid;
+.seccion-dos {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0.8fr 1.3fr 0.9fr;
     gap: 2px 2px;
@@ -98,7 +103,7 @@ footer i{
 
 }
 
-.contenido { 
+.contenido {
     grid-area: 2 / 1 / 3 / 2;
     border-style: ridge;
     color: white;
@@ -107,14 +112,15 @@ footer i{
 
 }
 
-.foto { grid-area: 2 / 2 / 3 / 3;
+.foto {
+    grid-area: 2 / 2 / 3 / 3;
     background-image: url(imagenes/0001.jpg);
     background-size: cover;
     background-position: center;
 
 }
 
-.Fondo{
+.Fondo {
     background-color: black !important;
     padding-bottom: 20vh;
 
@@ -122,11 +128,11 @@ footer i{
 
 /* Tercer seccion */
 
-.carousel-inner{
+.carousel-inner {
     height: 40vw;
 }
 
-.carousel-inner .w-100{
+.carousel-inner .w-100 {
     height: 40vw;
 }
 
@@ -135,18 +141,22 @@ footer i{
 
 /* bio.html */
 
-.BioMain{
+.BioMain {
     background-color: black;
 }
 
 /* bio.html seccion uno*/
 
-.SeccionUnoBio{
+.bodyBio{
+    background-color: black;
+}
+
+.SeccionUnoBio {
     width: 100%;
     height: 60vh;
 }
 
-.SeccionUnoBio img{
+.SeccionUnoBio img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -154,12 +164,12 @@ footer i{
 
 /* bio.html seccion dos*/
 
-.SeccionDosBio{
+.SeccionDosBio {
     width: 100%;
-    height: 100vh;
+    height: 20vh;
 }
 
-.SeccionDosBio .TextoMimi{
+.SeccionDosBio .TextoMimi {
     height: 10vh;
     width: 100%;
     color: rgb(81, 1, 1);
@@ -170,55 +180,78 @@ footer i{
     text-shadow: 0px 0px 2px white;
 }
 
-.SeccionDosBio .PresentacionMimi{
-    display: flex;
+.SeccionTresBio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.7fr 1.6fr 0.7fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    height: 100vh;
+    width: 100%;
 }
 
-.SeccionDosBio .PresentacionMimi div{
-    background-color: blue;
-    height: 300px;
-    width: 300px;
-    margin-right: 200px;
-    margin-top: 100px;
-    margin-left: 200px;
+.imagen {
+    grid-area: 2 / 2 / 3 / 3;
 }
 
-.SeccionDosBio .PresentacionMimi div img{
+.PresentacionMimi {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.SeccionTresBio {
+    height: 90vh;
+    width: 100%;
+}
+
+.SeccionTresBio div img {
     object-fit: cover;
-    height: 400px;
-    width: 400px;
+    height: 25vw;
+    width: 30vw;
+    margin-left: 10vw;
 }
 
-.SeccionDosBio .PresentacionMimi p{
+.SeccionTresBio div img:hover{
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+.SeccionTresBio .PresentacionMimi{
+    height: 20vw;
+}
+
+.SeccionTresBio .PresentacionMimi p {
+    height: 20vw;
+    width: 35vw;
     color: rgb(102, 0, 0);
-    height: 200px;
-    width: 450px;
-    margin-top: 140px;
-    margin-left: 100px;
-    margin-right: 50px;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     border-style: ridge;
     border-radius: 1px;
     border-color: rgb(102, 0, 0);
     text-align: center;
+    margin-top: 2vw;
+    margin-left: 10vw;
 }
 
 /* bio.html */
 
 /* galeria.html */
 
-.SeccionUnoGal div{
+.SeccionUnoGal div {
     height: 40vh;
     width: 100%;
 }
 
-.SeccionUnoGal .logo{
+.SeccionUnoGal .logo {
     background-image: url(./imagenes/Mesa\ de\ trabajo\ 60\ copia\ 6logo\ ML.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 
 }
+
 .galeria {
     height: 100vh;
     width: 100%;
@@ -226,6 +259,7 @@ footer i{
     display: grid;
     padding: 20px;
 }
+
 .foto {
     background-color: coral;
     border: 2px solid black;
@@ -234,144 +268,168 @@ footer i{
 
 .foto:hover {
 
-    -webkit-transform:scale(1.25);
-    -moz-transform:scale(1.25);
-    -ms-transform:scale(1.25);
-    -o-transform:scale(1.25);
-    transform:scale(1.25);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
 }
 
-.foto2{
+.foto2 {
     background-image: url(./imagenes/_MG_0831[1894].jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    }
-    .foto3{
+}
+
+.foto3 {
     background-image: url(./imagenes/48790007.JPG);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    }
-    .foto4{
+}
+
+.foto4 {
     background-image: url(./imagenes/_MG_0854[1891].jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    }
-    .foto5{
+}
+
+.foto5 {
     background-image: url(./imagenes/MimiLagarto-ADT_still_00010[1897].png);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
-    }
-    .foto6{
-    background-image: url(./imagenes/48790005.JPG);
-    background-position:center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    }
-    .foto7{
-        background-image: url(./imagenes/MimiLagarto-ADT_still_00012[1895].png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .foto8{
-        background-image: url(./imagenes/MimiLagarto-ADT_still_00024[1896].png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
 }
 
-@media screen and (min-width:0px) and (max-width:480px){
-    .foto2{
+.foto6 {
+    background-image: url(./imagenes/48790005.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.foto7 {
+    background-image: url(./imagenes/MimiLagarto-ADT_still_00012[1895].png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.foto8 {
+    background-image: url(./imagenes/MimiLagarto-ADT_still_00024[1896].png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width:0px) and (max-width:480px) {
+    .foto2 {
         grid-column: 1/3;
         grid-row: 1/2;
     }
-    .foto3{
+
+    .foto3 {
         grid-column: 1/3;
         grid-row: 2/3;
     }
-    .foto4{
+
+    .foto4 {
         grid-column: 1/3;
         grid-row: 3/4;
     }
-    .foto5{
+
+    .foto5 {
         grid-column: 1/3;
         grid-row: 4/5;
     }
-    .foto6{
+
+    .foto6 {
         grid-column: 1/3;
         grid-row: 5/6
     }
-    .foto7{
+
+    .foto7 {
         grid-column: 1/3;
         grid-row: 6/7;
     }
-    .foto8{
+
+    .foto8 {
         grid-column: 1/3;
         grid-row: 7/8;
     }
 }
 
-@media screen and (min-width:481px) and (max-width:767px){
-    .foto2{
+@media screen and (min-width:481px) and (max-width:767px) {
+    .foto2 {
         grid-column: 1/2;
         grid-row: 1/2;
     }
-    .foto3{
+
+    .foto3 {
         grid-column: 2/3;
         grid-row: 1/2;
     }
-    .foto4{
+
+    .foto4 {
         grid-column: 3/3;
         grid-row: 2/4;
     }
-    .foto5{
+
+    .foto5 {
         grid-column: 1/3;
         grid-row: 3/3;
     }
-    .foto6{
+
+    .foto6 {
         grid-column: 1/2;
         grid-row: 2/3
     }
-    .foto7{
+
+    .foto7 {
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    .foto8{
+
+    .foto8 {
         grid-column: 3/3;
         grid-row: 1/2;
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1500px){
-    .foto2{
+@media screen and (min-width:768px) and (max-width:1500px) {
+    .foto2 {
         grid-column: 1/2;
         grid-row: 1/2;
     }
-    .foto3{
+
+    .foto3 {
         grid-column: 2/3;
         grid-row: 1/2;
     }
-    .foto4{
+
+    .foto4 {
         grid-column: 3/3;
         grid-row: 1/3;
     }
-    .foto5{
+
+    .foto5 {
         grid-column: 1/3;
         grid-row: 2/2;
     }
-    .foto6{
+
+    .foto6 {
         grid-column: 3/3;
         grid-row: 3/4
     }
-    .foto7{
+
+    .foto7 {
         grid-column: 2/3;
         grid-row: 3/4;
     }
-    .foto8{
+
+    .foto8 {
         grid-column: 1/2;
         grid-row: 3/4;
     }
@@ -385,11 +443,11 @@ footer i{
 
 /* videos.html */
 
-.videoBody{
+.videoBody {
     background-color: black;
 }
 
-.videoPrincipal {  
+.videoPrincipal {
     width: 100%;
     height: 60vh;
     padding-top: 20px;
@@ -399,37 +457,39 @@ footer i{
     gap: 0px 0px;
     grid-auto-flow: row;
     background-color: black;
-  }
-  
-  .videoPrincipalUno { grid-area: 2 / 2 / 3 / 3; }
+}
 
-  .videoPrincipal .videoPrincipalUno .youtube{
-  height: 100%;
-  width: 100%;
+.videoPrincipalUno {
+    grid-area: 2 / 2 / 3 / 3;
+}
 
-  }
+.videoPrincipal .videoPrincipalUno .youtube {
+    height: 100%;
+    width: 100%;
+
+}
 
 
 
 
-.VideosSecundarigos{
+.VideosSecundarigos {
     width: 100%;
     height: 100vh;
     background-color: black;
 }
 
-.VideosSecundariosVideos{
+.VideosSecundariosVideos {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.VideosSecundariosVideos iframe{
+.VideosSecundariosVideos iframe {
     height: 25vw;
     width: 25vw;
 }
 
-.footerVideo{
+.footerVideo {
     margin-top: 4vh;
 }
 
@@ -437,51 +497,55 @@ footer i{
 
 /* contacto.html */
 
-.contactoBody{
+.contactoBody {
     background-color: black;
 }
 
-.formContacto {  display: grid;
+.formContacto {
+    display: grid;
     grid-template-columns: 0.2fr 2.6fr 0.2fr;
     grid-template-rows: 0.2fr 2.6fr 0.2fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     height: 100vh;
-  }
-  
-  .formContactoDiv { grid-area: 2 / 2 / 3 / 3; }
-  
+}
+
+.formContactoDiv {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
 .textoContacto {
     display: flex;
     justify-content: center;
 }
 
-.formCuadrado{
+.formCuadrado {
     align-content: space-around;
 }
 
-.textoContacto h1{
+.textoContacto h1 {
     color: rgb(102, 0, 0);
     padding-top: 4vw;
     font-size: 6vw;
     text-shadow: 0px 0px 3px white;
 }
-.formContacto .formContactoDiv input{
+
+.formContacto .formContactoDiv input {
     text-align: center !important;
     font-size: 2vw;
 }
 
-textarea.form-control{
+textarea.form-control {
     height: 10vw !important;
     margin-top: 2vw;
     margin-bottom: 2vw;
 }
 
-input.form-control.form-control-lg{
+input.form-control.form-control-lg {
     margin-top: 2vw;
 }
 
-div.input-group{
+div.input-group {
     margin-top: 2vw;
 }
 
