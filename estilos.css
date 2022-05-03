@@ -239,12 +239,12 @@ footer i {
 
 /* galeria.html */
 
-.SeccionUnoGal div {
+.seccionunogal div {
     height: 40vh;
     width: 100%;
 }
 
-.SeccionUnoGal .logo {
+.seccionunogal .logo {
     background-image: url(./imagenes/Mesa\ de\ trabajo\ 60\ copia\ 6logo\ ML.png);
     background-size: contain;
     background-position: center;
