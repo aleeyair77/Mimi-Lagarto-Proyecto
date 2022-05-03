@@ -8,9 +8,11 @@
 
 /* barra navegacion universal*/
 
+
 .navbar-collapse{
     flex-grow: inherit;
 }
+
 
 /* Footer universal */
 
@@ -114,11 +116,19 @@ footer i{
 
 .Fondo{
     background-color: black !important;
-    padding: auto !important;
+    padding-bottom: 20vh;
+
 }
 
 /* Tercer seccion */
 
+.carousel-inner{
+    height: 40vw;
+}
+
+.carousel-inner .w-100{
+    height: 40vw;
+}
 
 
 /* fin index.html */
@@ -375,18 +385,32 @@ footer i{
 
 /* videos.html */
 
-.VideoPrincipal{
-    width: 100%;
-    height: 60vh;
+.videoBody{
     background-color: black;
 }
 
-.VideoPrincipal iframe{
-    height: 300px;
-    width: 600px;
-    margin-left: 370px;
-    margin-top: 50px;
-}
+.videoPrincipal {  
+    width: 100%;
+    height: 60vh;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 0.5fr 1.6fr 0.9fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    background-color: black;
+  }
+  
+  .videoPrincipalUno { grid-area: 2 / 2 / 3 / 3; }
+
+  .videoPrincipal .videoPrincipalUno .youtube{
+  height: 100%;
+  width: 100%;
+
+  }
+
+
+
 
 .VideosSecundarios{
     width: 100%;
@@ -401,64 +425,64 @@ footer i{
 }
 
 .VideosSecundariosVideos iframe{
-    height: 250px;
-    width: 400px;
-    margin-top: 50px;
+    height: 25vw;
+    width: 25vw;
+}
+
+.footerVideo{
+    margin-top: 4vh;
 }
 
 /* fin videos.html */
 
 /* contacto.html */
 
-.Form{
-    width: 100%;
-    height: 70vh;
-    margin-top: 20px;
-    margin-bottom: 10px;
+.contactoBody{
+    background-color: black;
 }
 
-.FormCuadrado{
-    width: 95%;
-    height: 100%;
-    margin-left: 25px;
-    background-color: rgb(109, 0, 0);
-    color: rgb(161, 0, 0);
-}
-
-.Form .FormCuadrado h1{
-    text-shadow: 0px 0px 2px rgb(239, 239, 239);
-    font-size: 30px;
-    color: rgb(62, 0, 0);
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.Form .FormCuadrado .nombreyapellido{
+.formContacto {  display: grid;
+    grid-template-columns: 0.2fr 2.6fr 0.2fr;
+    grid-template-rows: 0.2fr 2.6fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    height: 100vh;
+  }
+  
+  .formContactoDiv { grid-area: 2 / 2 / 3 / 3; }
+  
+.textoContacto {
     display: flex;
-    margin-left: 460px;
-    margin-right: 460px;
-    justify-content: space-between;
-    padding-bottom: 10px;
+    justify-content: center;
 }
 
-.Form .FormCuadrado .emailynumero{
-    display: flex;
-    margin-left: 460px;
-    margin-right: 460px;
-    justify-content: space-between;
-    padding-bottom: 70px;
+.formCuadrado{
+    align-content: space-around;
 }
 
-.Form .FormCuadrado textarea{
-    margin-left: 320px;
+.textoContacto h1{
+    color: rgb(102, 0, 0);
+    padding-top: 4vw;
+    font-size: 6vw;
+    text-shadow: 0px 0px 3px white;
+}
+.formContacto .formContactoDiv input{
+    text-align: center !important;
+    font-size: 2vw;
 }
 
-.Form .FormCuadrado .botones{
-    display: flex;
-    margin-left: 460px;
-    margin-right: 460px;
-    justify-content: space-between;
-    margin-top: 20px;
+textarea.form-control{
+    height: 10vw !important;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+input.form-control.form-control-lg{
+    margin-top: 2vw;
+}
+
+div.input-group{
+    margin-top: 2vw;
 }
 
 /* fin contacto.html */
