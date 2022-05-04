@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+$color1: black;
+/* barra navegacion universal*/
+
+
+.navbar-collapse {
+    flex-grow: inherit;
+}
+
+
+/* Footer universal */
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: #dc3545;
+    color: $color1;
+    padding-top: 20px;
+    padding-left: 10px;
+    justify-content: space-around;
+
+    p {
+        font-size: 2vw;
+    }
+    i {
+        font-size: 2vw;
+        justify-content: center;
+    }
+}
+/* index.html */
+
+/* Primer seccion */
+
+.seccion-uno {
+    display: grid;
+    grid-template-columns: 0.5fr 2.2fr 0.3fr;
+    grid-template-rows: 0.8fr 1.3fr 0.9fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    height: 100vh;
+    width: 100%;
+
+    .texto {
+        width: 60%;
+        position: absolute;
+        top: 40%;
+        margin-left: 20%;
+    }
+
+    h1 {
+        font-size: 9vw;
+        text-align: center;
+        color: black !important;
+    }
+
+    p {
+        font-size: 4vw;
+        text-align: center;
+        color: black !important;
+    }
+
+    h1, p,
+.seccion-uno, {
+    text-shadow: 0px 0px 7px white;
+}
+}
+
+.img {
+    grid-area: 1 / 1 / 4 / 4;
+    background-image: url(imagenes/_MG_0831[1894].jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.texto {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+
+
+/* Segund seccion */
+
+
+.seccion-dos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.8fr 1.3fr 0.9fr;
+    gap: 2px 2px;
+    grid-auto-flow: row;
+    height: 100vh;
+    width: 100%;
+    background-color: $color1;
+
+}
+
+.contenido {
+    grid-area: 2 / 1 / 3 / 2;
+    border-style: ridge;
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+
+}
+
+.foto {
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url(imagenes/0001.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.fondo {
+    background-color: $color1 !important;
+    padding-bottom: 20vh;
+
+}
+
+/* Tercer seccion */
+
+.carousel-inner {
+    height: 40vw;
+}
+
+.carousel-inner .w-100 {
+    height: 40vw;
+}
+
+
+/* fin index.html */
+
+/* bio.html */
+
+.BioMain {
+    background-color: $color1;
+}
+
+/* bio.html seccion uno*/
+
+.bodyBio {
+    background-color: $color1;
+}
+
+.SeccionUnoBio {
+    width: 100%;
+    height: 60vh;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+/* bio.html seccion dos*/
+
+.SeccionDosBio {
+    width: 100%;
+    height: 20vh;
+
+    .TextoMimi {
+        height: 10vh;
+        width: 100%;
+        color: rgb(81, 1, 1);
+        font-size: 9vw;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 0%;
+        text-shadow: 0px 0px 2px white;
+    }
+}
+
+.SeccionTresBio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.7fr 1.6fr 0.7fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    height: 100vh;
+    width: 100%;
+
+    div img {
+        object-fit: cover;
+        height: 25vw;
+        width: 30vw;
+        margin-left: 10vw;
+    }
+
+    div img:hover {
+        -webkit-transform: scale(1.25);
+        -moz-transform: scale(1.25);
+        -ms-transform: scale(1.25);
+        -o-transform: scale(1.25);
+        transform: scale(1.25);
+    }
+
+    .PresentacionMimi {
+        height: 20vw;
+    }
+
+    .PresentacionMimi p {
+        height: 20vw;
+        width: 35vw;
+        color: rgb(102, 0, 0);
+        font-size: 1.4vw;
+        border-style: ridge;
+        border-radius: 1px;
+        border-color: rgb(102, 0, 0);
+        text-align: center;
+        margin-top: 2vw;
+        margin-left: 10vw;
+    }
+}
+
+.imagen {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.PresentacionMimi {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+/* bio.html */
+
+/* galeria.html */
+
+.seccionunogal div {
+    height: 40vh;
+    width: 100%;
+}
+
+.seccionunogal .logo {
+    background-image: url(./imagenes/logomimi.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.galeria {
+    height: 100vh;
+    width: 100%;
+    background-color: $color1;
+    display: grid;
+    padding: 20px;
+}
+
+.foto {
+    background-color: coral;
+    border: 2px solid $color1;
+    border-radius: 4px;
+}
+
+.foto:hover {
+
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+.foto2 {
+    background-image: url(./imagenes/_MG_0831[1894].jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.foto3 {
+    background-image: url(./imagenes/48790007.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.foto4 {
+    background-image: url(./imagenes/_MG_0854[1891].jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.foto5 {
+    background-image: url(./imagenes/MimiLagarto-ADT_still_00010[1897].png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.foto6 {
+    background-image: url(./imagenes/48790005.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.foto7 {
+    background-image: url(./imagenes/MimiLagarto-ADT_still_00012[1895].png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.foto8 {
+    background-image: url(./imagenes/MimiLagarto-ADT_still_00024[1896].png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width:0px) and (max-width:480px) {
+    .foto2 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .foto3 {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    .foto4 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .foto5 {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+
+    .foto6 {
+        grid-column: 1/3;
+        grid-row: 5/6
+    }
+
+    .foto7 {
+        grid-column: 1/3;
+        grid-row: 6/7;
+    }
+
+    .foto8 {
+        grid-column: 1/3;
+        grid-row: 7/8;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:767px) {
+    .foto2 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .foto3 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .foto4 {
+        grid-column: 3/3;
+        grid-row: 2/4;
+    }
+
+    .foto5 {
+        grid-column: 1/3;
+        grid-row: 3/3;
+    }
+
+    .foto6 {
+        grid-column: 1/2;
+        grid-row: 2/3
+    }
+
+    .foto7 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .foto8 {
+        grid-column: 3/3;
+        grid-row: 1/2;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1500px) {
+    .foto2 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .foto3 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .foto4 {
+        grid-column: 3/3;
+        grid-row: 1/3;
+    }
+
+    .foto5 {
+        grid-column: 1/3;
+        grid-row: 2/2;
+    }
+
+    .foto6 {
+        grid-column: 3/3;
+        grid-row: 3/4
+    }
+
+    .foto7 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .foto8 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+}
+
+
+
+
+
+/* fin galeria.html */
+
+/* videos.html */
+
+.videoBody {
+    background-color: $color1;
+}
+
+.videoPrincipal {
+    width: 100%;
+    height: 60vh;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 0.5fr 1.6fr 0.9fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    background-color: $color1;
+}
+
+.videoPrincipalUno {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.videoPrincipal .videoPrincipalUno .youtube {
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+
+.VideosSecundarigos {
+    width: 100%;
+    height: 100vh;
+    background-color: $color1;
+}
+
+.VideosSecundariosVideos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.VideosSecundariosVideos iframe {
+    height: 25vw;
+    width: 25vw;
+}
+
+.footerVideo {
+    margin-top: 4vh;
+}
+
+/* fin videos.html */
+
+/* contacto.html */
+
+.contactoBody {
+    background-color: $color1;
+}
+
+.formContacto {
+    display: grid;
+    grid-template-columns: 0.2fr 2.6fr 0.2fr;
+    grid-template-rows: 0.2fr 2.6fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    height: 100vh;
+}
+
+.formContactoDiv {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.textoContacto {
+    display: flex;
+    justify-content: center;
+}
+
+.formCuadrado {
+    align-content: space-around;
+}
+
+.textoContacto h1 {
+    color: rgb(102, 0, 0);
+    padding-top: 4vw;
+    font-size: 5vw;
+    text-shadow: 0px 0px 3px white;
+}
+
+.formContacto .formContactoDiv input {
+    text-align: center !important;
+    font-size: 2vw;
+}
+
+textarea.form-control {
+    height: 10vw !important;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+input.form-control.form-control-lg {
+    margin-top: 2vw;
+}
+
+div.input-group {
+    margin-top: 2vw;
+}
+
+/* fin contacto.html */
