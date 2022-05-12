@@ -6,8 +6,19 @@
     font-family: 'Raleway', sans-serif;
 }
 
+/*Sass*/
+
 $color1: black;
+
 $size1: 100%;
+
+$alturas: (
+    "largo": 100vh,
+    "medio-largo": 80vh,
+    "mediano": 60vh,
+    "corto": 40vh,
+    "super-corto": 20vh,
+);
 /* barra navegacion universal*/
 
 
@@ -48,7 +59,7 @@ footer {
     grid-template-rows: 0.8fr 1.3fr 0.9fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    height: 100vh;
+    height: map-get($alturas , "largo" );
     width: $size1;
 
     .texto {
@@ -101,7 +112,7 @@ footer {
     grid-template-rows: 0.8fr 1.3fr 0.9fr;
     gap: 2px 2px;
     grid-auto-flow: row;
-    height: 100vh;
+    height: map-get($alturas , "largo" );
     width: $size1;
     background-color: $color1;
 
@@ -126,7 +137,7 @@ footer {
 
 .fondo {
     background-color: $color1 !important;
-    padding-bottom: 20vh;
+    padding-bottom: map-get($alturas , "super-corto" );
 
 }
 
@@ -157,7 +168,7 @@ footer {
 
 .SeccionUnoBio {
     width: $size1;
-    height: 60vh;
+    height: map-get($alturas , "mediano" );
 
     img {
         width: $size1;
@@ -171,7 +182,7 @@ footer {
 
 .SeccionDosBio {
     width: $size1;
-    height: 20vh;
+    height: map-get($alturas , "super-corto" );;
 
     .TextoMimi {
         height: 10vh;
@@ -191,7 +202,7 @@ footer {
     grid-template-rows: 0.7fr 1.6fr 0.7fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    height: 100vh;
+    height: map-get($alturas , "largo" );
     width: $size1;
 
     div img {
@@ -240,7 +251,7 @@ footer {
 /* galeria.html */
 
 .seccionunogal div {
-    height: 40vh;
+    height: map-get($alturas , "corto" );
     width: $size1;
 }
 
@@ -252,7 +263,7 @@ footer {
 }
 
 .galeria {
-    height: 100vh;
+    height: map-get($alturas , "largo" );
     width: $size1;
     background-color: $color1;
     display: grid;
@@ -438,7 +449,7 @@ footer {
 
 .videoPrincipal {
     width: $size1;
-    height: 60vh;
+    height: map-get($alturas , "mediano" );
     padding-top: 20px;
     display: grid;
     grid-template-columns: 0.5fr 2fr 0.5fr;
@@ -463,7 +474,7 @@ footer {
 
 .VideosSecundarios {
     width: $size1;
-    height: 100vh;
+    height: map-get($alturas , "largo" );
     background-color: $color1;
 }
 
@@ -496,7 +507,7 @@ footer {
     grid-template-rows: 0.2fr 2.6fr 0.2fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    height: 100vh;
+    height: map-get($alturas , "largo" );
 }
 
 .formContactoDiv {
