@@ -7,6 +7,7 @@
 }
 
 $color1: black;
+$size1: 100%;
 /* barra navegacion universal*/
 
 
@@ -19,7 +20,7 @@ $color1: black;
 
 footer {
     display: flex;
-    width: 100%;
+    width: $size1;
     height: 80px;
     background-color: #dc3545;
     color: $color1;
@@ -30,11 +31,13 @@ footer {
     p {
         font-size: 2vw;
     }
+
     i {
         font-size: 2vw;
         justify-content: center;
     }
 }
+
 /* index.html */
 
 /* Primer seccion */
@@ -46,7 +49,7 @@ footer {
     gap: 0px 0px;
     grid-auto-flow: row;
     height: 100vh;
-    width: 100%;
+    width: $size1;
 
     .texto {
         width: 60%;
@@ -67,10 +70,12 @@ footer {
         color: black !important;
     }
 
-    h1, p,
-.seccion-uno, {
-    text-shadow: 0px 0px 7px white;
-}
+    h1,
+    p,
+    .seccion-uno,
+        {
+        text-shadow: 0px 0px 7px white;
+    }
 }
 
 .img {
@@ -96,7 +101,7 @@ footer {
     gap: 2px 2px;
     grid-auto-flow: row;
     height: 100vh;
-    width: 100%;
+    width: $size1;
     background-color: $color1;
 
 }
@@ -150,12 +155,12 @@ footer {
 }
 
 .SeccionUnoBio {
-    width: 100%;
+    width: $size1;
     height: 60vh;
 
     img {
-        width: 100%;
-        height: 100%;
+        width: $size1;
+        height: $size1;
         object-fit: cover;
     }
 }
@@ -164,12 +169,12 @@ footer {
 /* bio.html seccion dos*/
 
 .SeccionDosBio {
-    width: 100%;
+    width: $size1;
     height: 20vh;
 
     .TextoMimi {
         height: 10vh;
-        width: 100%;
+        width: $size1;
         color: rgb(81, 1, 1);
         font-size: 9vw;
         text-align: center;
@@ -186,7 +191,7 @@ footer {
     gap: 0px 0px;
     grid-auto-flow: row;
     height: 100vh;
-    width: 100%;
+    width: $size1;
 
     div img {
         object-fit: cover;
@@ -235,7 +240,7 @@ footer {
 
 .seccionunogal div {
     height: 40vh;
-    width: 100%;
+    width: $size1;
 }
 
 .seccionunogal .logo {
@@ -247,7 +252,7 @@ footer {
 
 .galeria {
     height: 100vh;
-    width: 100%;
+    width: $size1;
     background-color: $color1;
     display: grid;
     padding: 20px;
@@ -276,45 +281,35 @@ footer {
 }
 
 .foto3 {
+    @extend .foto2;
     background-image: url(./imagenes/48790007.JPG);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .foto4 {
+    @extend .foto2;
     background-image: url(./imagenes/mimidecostado.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .foto5 {
     background-image: url(./imagenes/MimiLagarto-ADT_still_00010[1897].png);
-    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: top;
 }
 
 .foto6 {
+    @extend .foto2;
     background-image: url(./imagenes/48790005.JPG);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .foto7 {
+    @extend .foto2;
     background-image: url(./imagenes/MimiLagarto-ADT_still_00012[1895].png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .foto8 {
+    @extend .foto2;
     background-image: url(./imagenes/MimiLagarto-ADT_still_00024[1896].png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 @media screen and (min-width:0px) and (max-width:480px) {
@@ -441,7 +436,7 @@ footer {
 }
 
 .videoPrincipal {
-    width: 100%;
+    width: $size1;
     height: 60vh;
     padding-top: 20px;
     display: grid;
@@ -457,16 +452,16 @@ footer {
 }
 
 .videoPrincipal .videoPrincipalUno .youtube {
-    height: 100%;
-    width: 100%;
+    height: $size1;
+    width: $size1;
 
 }
 
 
 
 
-.VideosSecundarigos {
-    width: 100%;
+.VideosSecundarios {
+    width: $size1;
     height: 100vh;
     background-color: $color1;
 }
@@ -528,18 +523,22 @@ footer {
     font-size: 2vw;
 }
 
-textarea.form-control {
-    height: 10vw !important;
+@mixin size {
     margin-top: 2vw;
+}
+
+textarea.form-control {
+    @include size;
+    height: 10vw !important;
     margin-bottom: 2vw;
 }
 
 input.form-control.form-control-lg {
-    margin-top: 2vw;
+    @include size;
 }
 
 div.input-group {
-    margin-top: 2vw;
+    @include size;
 }
 
 /* fin contacto.html */
