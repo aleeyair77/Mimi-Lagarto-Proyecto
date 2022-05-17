@@ -58,7 +58,7 @@
         </nav>
     </header>
     <!---------------------------------------->
-    <main>
+    <main class="index">
         <!------------primer seccion----------->
 
         <div class="seccion-uno">
@@ -70,52 +70,58 @@
         </div>
         <!---------------------------------------->
         <!------------segunda seccion----------->
-        <div class="seccion-dos">
-            <div class="contenido">Mimi Lagarto es tan actual como ancestral. Su sonido fusiona elementos de la música
-                popular latina y rioplatense con componentes rítimicos y fraseos típicos de géneros urbanos,
-                contemporáneos y electrónicos.
-                En vivo la propuesta es perfomatica, bailable e introspectiva. Entre el misterio y lo conocido, convoca
-                al rito del encuentro. La ofrenda, el sonido.</div>
-            <div class="foto"></div>
-        </div>
-        <!---------------------------------------->
-        <!------------tercer seccion----------->
-        <!-- Carousel -->
-        <div class="fondo">
-            <div id="demo" class="container pt-2 pb-2 border carousel slide" data-bs-ride="carousel">
-                <!-- Indicators/dots -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <section id="mimipresentacion" class="container-fluid">
+            <article id="presentacion" class="row p-5">
+                <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center border border-danger border-5 p-0">
+                    <img src="imagenes/0001.jpg" class="w-100" alt="mimi mirando por persiana">
                 </div>
+                <div class="col-12 col-lg-6 p-5 d-flex align-items-center">
+                    <p class="text-center border border-danger text-white border-5 fs-5"> Mimi Lagarto es tan actual como ancestral. Su sonido fusiona elementos de la
+                        música
+                        popular latina y rioplatense con componentes rítimicos y fraseos típicos de géneros urbanos,
+                        contemporáneos y electrónicos.
+                        En vivo la propuesta es perfomatica, bailable e introspectiva. Entre el misterio y lo conocido,
+                        convoca
+                        al rito del encuentro. La ofrenda, el sonido.</p>
+                </div>
+                <div class="col-12 p-5">
+                    <!-- Carousel -->
+                    <div id="demo" class="container pt-2 pb-2 border border-danger border-5 carousel slide" data-bs-ride="carousel">
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
 
-                <!-- The slideshow/carousel -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="imagenes/Sin título-2.png" alt="mimi agachada" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imagenes/48790005.JPG" alt="sacando lengua" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imagenes/48790007.JPG" alt="mimi de espalda" class="d-block w-100">
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="imagenes/Sin título-2.png" alt="mimi agachada" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/48790005.JPG" alt="sacando lengua" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/48790007.JPG" alt="mimi de espalda" class="d-block w-100">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
                     </div>
                 </div>
-
-                <!-- Left and right controls/icons -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-            </div>
-        </div>
+            </article>
+        </section>
         <!---------------------------------------->
         <!------------footer----------->
         <footer>
-            <p>Todos los derechos reservados Mimi Lagarto ©</p>
+            <p class="fs-4">Todos los derechos reservados Mimi Lagarto ©</p>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-youtube"></i>
