@@ -36,62 +36,75 @@ footer p{
 }
 
 /* Primer seccion */
-.seccion-uno {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 0.5fr 2.2fr 0.3fr;
-      grid-template-columns: 0.5fr 2.2fr 0.3fr;
-  -ms-grid-rows: 0.8fr 1.3fr 0.9fr;
-      grid-template-rows: 0.8fr 1.3fr 0.9fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  height: 100vh;
-  width: 100%;
+#PrimerParte{
+height: 90vh;
+background-image: url(imagenes/mimicantando.jpg);
+background-position: center;
+background-size: cover ;
 }
 
-.seccion-uno .texto {
-  width: 60%;
-  position: relative;
-  margin-left: 20%;
-}
-
-.seccion-uno h1 {
-  font-size: 9vw;
-  text-align: center;
-  color: black !important;
-}
-
-.seccion-uno p {
-  font-size: 4vw;
-  text-align: center;
-  color: black !important;
-}
-
-.seccion-uno h1,
-.seccion-uno p,
-.seccion-uno .seccion-uno {
+#TextoPrimerParte{
   text-shadow: 0px 0px 7px white;
 }
 
-.img {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: 1 / 1 / 4 / 4;
-  background-image: url(imagenes/mimicantando.jpg);
-  background-size: cover;
-  background-position: center;
+.display-1 {
+  font-size: calc(3rem + 6vw);
+  font-weight: 300;
+  line-height: 1.2;
 }
 
-.texto {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 2 / 3 / 3;
+.fs-1 {
+  font-size: calc(2.375rem + 1.5vw)!important;
 }
 
+@media screen and (min-width: 0px) and (max-width: 398px) {
+  #PrimerParte {
+    height: 50vh;
+  }
+  .display-1 {
+    font-size: calc(2.5rem + 3.5vw);
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  
+  .fs-1 {
+    font-size: calc(1.375rem + 1.0vw)!important;
+  }
+  .top-50 {
+    top: 40%!important;
+}
+}
+
+@media screen and (min-width: 399px) and (max-width: 569px) {
+  #PrimerParte{
+    height: 70vh;
+  }
+  .display-1 {
+    font-size: calc(3rem + 4vw);
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  
+  .fs-1 {
+    font-size: calc(1.375rem + 1.0vw)!important;
+  }
+}
+
+
+  @media screen and (min-width: 570px) and (max-width: 830px) {
+    #PrimerParte{
+      height: 80vh;
+    }
+    .display-1 {
+      font-size: calc(3rem + 5vw);
+      font-weight: 300;
+      line-height: 1.2;
+    }
+    
+    .fs-1 {
+      font-size: calc(1.775rem + 1.2vw)!important;
+    }
+    }
 /* Segund seccion */
 
 
