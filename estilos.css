@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Orbitron', sans-serif;
   font-family: 'Raleway', sans-serif;
 }
@@ -11,24 +11,25 @@
 /* barra navegacion universal*/
 .navbar-collapse {
   -webkit-box-flex: inherit;
-      -ms-flex-positive: inherit;
-          flex-grow: inherit;
+  -ms-flex-positive: inherit;
+  flex-grow: inherit;
 }
 
 /* Footer universal */
 footer {
   min-height: 100px;
-  }
+}
 
-footer p{
+footer p {
   text-align: center;
 }
 
-#iconos i{
+#iconos i {
   font-size: 26px;
   padding: 0px 8px;
   justify-content: center;
 }
+
 /* index.html */
 
 .index {
@@ -36,14 +37,14 @@ footer p{
 }
 
 /* Primer seccion */
-#PrimerParte{
-height: 90vh;
-background-image: url(imagenes/mimicantando.jpg);
-background-position: center;
-background-size: cover ;
+#PrimerParte {
+  height: 90vh;
+  background-image: url(imagenes/mimicantando.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
-#TextoPrimerParte{
+#TextoPrimerParte {
   text-shadow: 0px 0px 7px white;
 }
 
@@ -54,57 +55,62 @@ background-size: cover ;
 }
 
 .fs-1 {
-  font-size: calc(2.375rem + 1.5vw)!important;
+  font-size: calc(2.375rem + 1.5vw) !important;
 }
 
 @media screen and (min-width: 0px) and (max-width: 398px) {
   #PrimerParte {
     height: 50vh;
   }
+
   .display-1 {
     font-size: calc(2.5rem + 3.5vw);
     font-weight: 300;
     line-height: 1.2;
   }
-  
+
   .fs-1 {
-    font-size: calc(1.375rem + 1.0vw)!important;
+    font-size: calc(1.375rem + 1.0vw) !important;
   }
+
   .top-50 {
-    top: 40%!important;
-}
+    top: 40% !important;
+  }
 }
 
 @media screen and (min-width: 399px) and (max-width: 569px) {
-  #PrimerParte{
+  #PrimerParte {
     height: 70vh;
   }
+
   .display-1 {
     font-size: calc(3rem + 4vw);
     font-weight: 300;
     line-height: 1.2;
   }
-  
+
   .fs-1 {
-    font-size: calc(1.375rem + 1.0vw)!important;
+    font-size: calc(1.375rem + 1.0vw) !important;
   }
 }
 
 
-  @media screen and (min-width: 570px) and (max-width: 830px) {
-    #PrimerParte{
-      height: 80vh;
-    }
-    .display-1 {
-      font-size: calc(3rem + 5vw);
-      font-weight: 300;
-      line-height: 1.2;
-    }
-    
-    .fs-1 {
-      font-size: calc(1.775rem + 1.2vw)!important;
-    }
-    }
+@media screen and (min-width: 570px) and (max-width: 830px) {
+  #PrimerParte {
+    height: 80vh;
+  }
+
+  .display-1 {
+    font-size: calc(3rem + 5vw);
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  .fs-1 {
+    font-size: calc(1.775rem + 1.2vw) !important;
+  }
+}
+
 /* Segund seccion */
 
 
@@ -140,12 +146,12 @@ background-size: cover ;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /* bio.html seccion dos*/
 
-#TextoMimi{
+#TextoMimi {
   color: #131313;
   font-size: 10vw;
   text-shadow: 0px 0px 4px white
@@ -187,7 +193,12 @@ background-size: cover ;
   transform: scale(1.25);
 }
 
-.foto2, .foto3, .foto4, .foto6, .foto7, .foto8 {
+.foto2,
+.foto3,
+.foto4,
+.foto6,
+.foto7,
+.foto8 {
   background-image: url(./imagenes/mimicantando.jpg);
   background-position: center;
   background-size: cover;
@@ -222,12 +233,17 @@ background-size: cover ;
 }
 
 @media screen and (min-width: 0px) and (max-width: 480px) {
-  
-  .galeria{
+
+  .galeria {
     height: 250vh;
   }
 
-  .foto2, .foto3, .foto4, .foto6, .foto7, .foto8 {
+  .foto2,
+  .foto3,
+  .foto4,
+  .foto6,
+  .foto7,
+  .foto8 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1/3;
@@ -235,6 +251,7 @@ background-size: cover ;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
+
   .foto3 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -243,6 +260,7 @@ background-size: cover ;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
   }
+
   .foto4 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -251,6 +269,7 @@ background-size: cover ;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
   }
+
   .foto5 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -259,6 +278,7 @@ background-size: cover ;
     -ms-grid-row-span: 1;
     grid-row: 4/5;
   }
+
   .foto6 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -267,6 +287,7 @@ background-size: cover ;
     -ms-grid-row-span: 1;
     grid-row: 5/6;
   }
+
   .foto7 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -275,6 +296,7 @@ background-size: cover ;
     -ms-grid-row-span: 1;
     grid-row: 6/7;
   }
+
   .foto8 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -286,7 +308,13 @@ background-size: cover ;
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
-  .foto2, .foto3, .foto4, .foto6, .foto7, .foto8 {
+
+  .foto2,
+  .foto3,
+  .foto4,
+  .foto6,
+  .foto7,
+  .foto8 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -294,6 +322,7 @@ background-size: cover ;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
+
   .foto3 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
@@ -302,6 +331,7 @@ background-size: cover ;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
+
   .foto4 {
     -ms-grid-column: 3;
     grid-column: 3/3;
@@ -309,6 +339,7 @@ background-size: cover ;
     -ms-grid-row-span: 2;
     grid-row: 2/4;
   }
+
   .foto5 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -316,6 +347,7 @@ background-size: cover ;
     -ms-grid-row: 3;
     grid-row: 3/3;
   }
+
   .foto6 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -324,6 +356,7 @@ background-size: cover ;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
   }
+
   .foto7 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
@@ -332,6 +365,7 @@ background-size: cover ;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
   }
+
   .foto8 {
     -ms-grid-column: 3;
     grid-column: 3/3;
@@ -342,7 +376,13 @@ background-size: cover ;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1500px) {
-  .foto2, .foto3, .foto4, .foto6, .foto7, .foto8 {
+
+  .foto2,
+  .foto3,
+  .foto4,
+  .foto6,
+  .foto7,
+  .foto8 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -350,6 +390,7 @@ background-size: cover ;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
+
   .foto3 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
@@ -358,6 +399,7 @@ background-size: cover ;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
+
   .foto4 {
     -ms-grid-column: 3;
     grid-column: 3/3;
@@ -365,6 +407,7 @@ background-size: cover ;
     -ms-grid-row-span: 2;
     grid-row: 1/3;
   }
+
   .foto5 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -372,6 +415,7 @@ background-size: cover ;
     -ms-grid-row: 2;
     grid-row: 2/2;
   }
+
   .foto6 {
     -ms-grid-column: 3;
     grid-column: 3/3;
@@ -379,6 +423,7 @@ background-size: cover ;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
   }
+
   .foto7 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
@@ -387,6 +432,7 @@ background-size: cover ;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
   }
+
   .foto8 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -403,58 +449,17 @@ background-size: cover ;
   background-color: black;
 }
 
-.videoPrincipal {
-  width: 100%;
-  height: 60vh;
-  padding-top: 20px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 0.5fr 2fr 0.5fr;
-      grid-template-columns: 0.5fr 2fr 0.5fr;
-  -ms-grid-rows: 0.5fr 1.6fr 0.9fr;
-      grid-template-rows: 0.5fr 1.6fr 0.9fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  background-color: black;
+iframe {
+  border-radius: 73px;
+  background: #979595;
+  box-shadow:  5px 5px 10px #807f7f,
+               -5px -5px 10px #aeabab;
 }
 
-.videoPrincipalUno {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 2 / 3 / 3;
-}
-
-.videoPrincipal .videoPrincipalUno .youtube {
-  height: 100%;
-  width: 100%;
-}
-
-.VideosSecundarios {
-  width: 100%;
-  height: 100vh;
-  background-color: black;
-}
-
-.VideosSecundariosVideos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.VideosSecundariosVideos iframe {
-  height: 25vw;
-  width: 25vw;
-}
-
-#footerVideo {
-  margin-top: 40px;
+@media screen and (min-width: 769px) and (max-width: 903px) {
+  .w-75 {
+    width: 100% !important;
+  }
 }
 
 /* fin videos.html */
@@ -467,13 +472,14 @@ background-size: cover ;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 0.2fr 2.6fr 0.2fr;
-      grid-template-columns: 0.2fr 2.6fr 0.2fr;
+  grid-template-columns: 0.2fr 2.6fr 0.2fr;
   -ms-grid-rows: 0.2fr 2.6fr 0.2fr;
-      grid-template-rows: 0.2fr 2.6fr 0.2fr;
+  grid-template-rows: 0.2fr 2.6fr 0.2fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  height: 100vh;
 }
+
+
 
 .formContactoDiv {
   -ms-grid-row: 2;
@@ -488,13 +494,13 @@ background-size: cover ;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .formCuadrado {
   -ms-flex-line-pack: distribute;
-      align-content: space-around;
+  align-content: space-around;
 }
 
 .textoContacto h1 {
@@ -522,6 +528,7 @@ input.form-control.form-control-lg {
 div.input-group {
   margin-top: 2vw;
 }
+
 
 /* fin contacto.html */
 /*# sourceMappingURL=estilos.css.map */
